@@ -13,6 +13,11 @@ for(i=0;i<stanitli.length;i++){
 stanitli[i].id='stanit'+i;
 }
 
+layui.use('element', function(){
+    var element = layui.element;
+});
+
+
 var studentli=document.getElementsByClassName('studentbox');
 for(i=0;i<studentli.length;i++){
 studentli[i].id='studenti'+i;
