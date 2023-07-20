@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/layui.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='page_style/news/style.css') }}" type="text/css">
+
+    {#    引入Javascript#}
+    <script src="{{ url_for('static', filename='js/jquery.min.3.2.1.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/layui.js') }}"></script>
+    <script src="{{ url_for('static', filename='page_style/news/main.js') }}"></script>
+
+</head>
+<body>
+
+<!--templateVarStart--><!--templateVarName=headers-->
+<header style="width: 100%;">
+    <!-- 导航栏颜色 -->
+
+    <div class="headerMenu">
+        <div class="layui-row" style="width: 80%;height:100px;margin:0 auto;">
+            <a href="./index.html">
+                <div class="layui-col-md4 wow fadeInLeft" data-wow-delay="0.3s" style="float: left;">
+                    <img src="http://www.cfls.net.cn/site/219/news/065794e03ad848d5b8441b38524f0e9f.png"
+                         style="margin-top: 18px;">
+                </div>
+            </a>
+            <div class="layui-col-md8 wow fadeInRight" data-wow-delay="0.3s">
+                <span class="prev" style="width: 26px;position: absolute;left: 12%; top: 40px;"><img
+                        src="http://www.cfls.net.cn/site/219/news/f030b2d740dd4a5fb6a545f7c0fcddb9.png" alt=""></span>
+                <span class="next" style="width: 26px;position: absolute;right: 0px; top: 40px;"><img
+                        src="http://www.cfls.net.cn/site/219/news/b0f12386627a442ca96f802865040792.png" alt=""></span>
+                <ul id="nav_ul" class="layui-nav layui-nav_ul " style="top:20px;margin-left: 15%;  overflow-x: auto;
+                    white-space: nowrap; width: 80%;scrollbar-width: none; ">
+
+                    <li class="menulist layui-nav-item">
+                        <a href="./index.html"> <span class="menutitle">学校首页</span></a>
+
+                    </li>
+
+
+                    <li class="menulist layui-nav-item">
+                        <a href="/about.html"> <span class="menutitle">成外概况</span><span
+                                class="layui-nav-more"></span></a>
+                        <dl class="layui-nav-child layui-anim layui-anim-upbit">
+                            <dd><a href="/xzjy.html">校长寄语</a></dd>
+                            <dd><a href="/xxjj.html">学校简介</a></dd>
+                            <dd><a href="/xjgb.html">校级干部</a></dd>
+                            <dd><a href="/zcgb.html">中层干部</a></dd>
+                            <dd><a href="/bxtj.html">办学条件</a></dd>
+                            <dd><a href="/xyfg.html">校园风光</a></dd>
+                            <dd><a href="/lxwm.html">联系我们</a></dd>
+                            <dd><a href="/dytd.html">成外德阳校区团队</a></dd>
+                        </dl>
+                    </li>
+
+                    <li class="menulist layui-nav-item">
+                        <a href="/details.html"> <span class="menutitle">学校新闻</span><span
+                                class="layui-nav-more"></span></a>
+                        <dl class="layui-nav-child layui-anim layui-anim-upbit">
+                            <dd><a href="/xyrx.html">校园热讯</a></dd>
+                            <dd><a href="/tpxw.html">图片新闻</a></dd>
+                            <dd><a href="/mtbd.html">媒体报道</a></dd>
+                        </dl>
+                    </li>
+                    <li class="menulist layui-nav-item">
+                        <a href="/teacher.html"> <span class="menutitle">教师风采</span><span
+                                class="layui-nav-more"></span></a>
+                        <dl class="layui-nav-child layui-anim layui-anim-upbit">
+                            <dd><a href="/tjjs.html">特级教师</a></dd>
+                            <dd><a href="/gjjs.html">高级教师</a></dd>
+                            <dd><a href="/ndyx.html">年度优秀</a></dd>
+                        </dl>
+                    </li>
+
+                    <li class="menulist layui-nav-item">
+                        <a href="/student.html"> <span class="menutitle">学生天地</span><span
+                                class="layui-nav-more"></span></a>
+                        <dl class="layui-nav-child layui-anim layui-anim-upbit">
+                            <dd><a href="/xsst.html">学生社团</a></dd>
+                            <dd><a href="/xshd.html">学生活动</a></dd>
+                            <dd><a href="/xszp.html">学生作品</a></dd>
+                        </dl>
+                    </li>
+
+                    <li class="menulist layui-nav-item">
+                        <a href="/dyzc.html"> <span class="menutitle">德育之窗</span><span
+                                class="layui-nav-more"></span></a>
+                        <dl class="layui-nav-child layui-anim layui-anim-upbit">
+                            <dd><a href="/dygl.html">德育管理</a></dd>
+                            <dd><a href="/bjgl.html">班级管理</a></dd>
+                            <dd><a href="/shgl.html">生活管理</a></dd>
+                        </dl>
+                    </li>
+                    <li class="menulist layui-nav-item">
+                        <a href="/scientific.html"> <span class="menutitle">教学科研</span><span
+                                class="layui-nav-more"></span></a>
+                        <dl class="layui-nav-child layui-anim layui-anim-upbit">
+                            <dd><a href="/jxgl.html">教学管理</a></dd>
+                            <dd><a href="/jsfz.html">教师发展</a></dd>
+                            <dd><a href="/xkjs.html">学科竞赛</a></dd>
+                            <dd><a href="/sgll.html">硕果累累</a></dd>
+                        </dl>
+                    </li>
+                    <li class="menulist layui-nav-item">
+                        <a href="/dqgz.html"> <span class="menutitle">党群工作</span> <span
+                                class="layui-nav-more"></span></a>
+                        <dl class="layui-nav-child layui-anim layui-anim-upbit">
+                            <dd><a href="/yxdy.html">优秀党员</a></dd>
+                            <dd><a href="/hdjb.html">活动简报</a></dd>
+                            <dd><a href="/xxwx.html">学习文献</a></dd>
+                        </dl>
+                    </li>
+                    <li class="menulist layui-nav-item">
+                        <a href="/dwjl.html"> <span class="menutitle">对外交流</span> <span
+                                class="layui-nav-more"></span></a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="/level.html">AP/A-Level中心</a></dd>
+                            <dd><a href="/zjgz.html">中加高中</a></dd>
+                        </dl>
+                    </li>
+                    <li class="menulist layui-nav-item">
+                        <a href="/xypd.html"> <span class="menutitle">校友频道</span><span
+                                class="layui-nav-more"></span></a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="/xyml.html">校友名录</a></dd>
+                            <dd><a href="/xygs.html">校友故事</a></dd>
+                            <dd><a href="/xyh.html">校友会</a></dd>
+                        </dl>
+                    </li>
+                    <li class="menulist layui-nav-item">
+                        <a href="/zszp.html"> <span class="menutitle">招生招聘</span><span
+                                class="layui-nav-more"></span></a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="/zs.html">招生</a></dd>
+                            <dd><a href="/zszn.html">招生指南</a></dd>
+                            <dd><a href="/zsxx.html">招生信息</a></dd>
+                            <dd><a href="/zp.html">招聘</a></dd>
+                        </dl>
+                    </li>
+
+                    <span class="layui-nav-bar" style="left: 520px; top: 60px; width: 0px; opacity: 0;"></span></ul>
+            </div>
+
+            <div class="mnavh">
+                <img src="http://www.cfls.net.cn/site/219/news/f813289bfc6442ed99decfc1d71d9878.png" alt="">
+            </div>
+            <div class="mnavh_close">
+                <img src="http://www.cfls.net.cn/site/219/news/4052c7735a7f43a88364ed9dda5e7bb0.png" alt="">
+            </div>
+        </div>
+
+        <nav id="nav">
+            <ul id="starlist">
+                <li><a href="/index.html" title="首页">学校首页</a></li>
+                <li class="menu">
+                    <span class="menu_open"><img
+                            src="http://www.cfls.net.cn/site/219/news/572ff4fbeb9f4bc1bab29bc6500d99f7.png"
+                            alt=""></span>
+                    <span class="menu_close"><img
+                            src="http://www.cfls.net.cn/site/219/news/1702987d4d624ceb832dfa7326097dad.png"
+                            alt=""></span>
+
+                    <a href="/about.html">成外概况</a>
+                    <ul class="sub">
+                        <li><a href="/xzjy.html">校长寄语</a></li>
+                        <li><a href="/xxjj.html">学校简介</a></li>
+                        <li><a href="/xjgb.html">校级干部</a></li>
+                        <li><a href="/zcgb.html">中层干部</a></li>
+                        <li><a href="/bxtj.html">办学条件</a></li>
+                        <li><a href="/xyfg.html">校园风光</a></li>
+                        <li><a href="/lxwm.html">联系我们</a></li>
+                        <li><a href="//dyttd.html.html">成外德阳校区团队</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <span class="menu_open"><img
+                            src="http://www.cfls.net.cn/site/219/news/572ff4fbeb9f4bc1bab29bc6500d99f7.png"
+                            alt=""></span>
+                    <span class="menu_close"><img
+                            src="http://www.cfls.net.cn/site/219/news/1702987d4d624ceb832dfa7326097dad.png"
+                            alt=""></span>
+
+                    <a href="/details.html">学校新闻</a>
+                    <ul class="sub">
+
+                        <li><a href="/xyrx.html">校园热讯</a></li>
+                        <li><a href="/tpxw.html">图片新闻</a></li>
+                        <li><a href="/mtbd.html">媒体报道</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <span class="menu_open"><img
+                            src="http://www.cfls.net.cn/site/219/news/572ff4fbeb9f4bc1bab29bc6500d99f7.png"
+                            alt=""></span>
+                    <span class="menu_close"><img
+                            src="http://www.cfls.net.cn/site/219/news/1702987d4d624ceb832dfa7326097dad.png"
+                            alt=""></span>
+
+                    <a href="/teacher.html">教师风采</a>
+                    <ul class="sub">
+
+                        <li><a href="/tjjs.html">特级教师</a></li>
+                        <li><a href="/gjjs.html">高级教师</a></li>
+                        <li><a href="/ndyx.html">年度优秀</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <span class="menu_open"><img
+                            src="http://www.cfls.net.cn/site/219/news/572ff4fbeb9f4bc1bab29bc6500d99f7.png"
+                            alt=""></span>
+                    <span class="menu_close"><img
+                            src="http://www.cfls.net.cn/site/219/news/1702987d4d624ceb832dfa7326097dad.png"
+                            alt=""></span>
+
+                    <a href="/student.html">学生天地</a>
+                    <ul class="sub">
+
+                        <li><a href="/xsst.html">学生社团</a></li>
+                        <li><a href="/xshd.html">学生活动</a></li>
+                        <li><a href="/xszp.html">学生作品</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <span class="menu_open"><img
+                            src="http://www.cfls.net.cn/site/219/news/572ff4fbeb9f4bc1bab29bc6500d99f7.png"
+                            alt=""></span>
+                    <span class="menu_close"><img
+                            src="http://www.cfls.net.cn/site/219/news/1702987d4d624ceb832dfa7326097dad.png"
+                            alt=""></span>
+
+                    <a href="/dyzc.html">德育之窗</a>
+                    <ul class="sub">
+
+                        <li><a href="/dygl.html">德育管理</a></li>
+                        <li><a href="/bjjs.html">班级介绍</a></li>
+                        <li><a href="/shgl.html">生活管理</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <span class="menu_open"><img
+                            src="http://www.cfls.net.cn/site/219/news/572ff4fbeb9f4bc1bab29bc6500d99f7.png"
+                            alt=""></span>
+                    <span class="menu_close"><img
+                            src="http://www.cfls.net.cn/site/219/news/1702987d4d624ceb832dfa7326097dad.png"
+                            alt=""></span>
+
+                    <a href="/scientific.html">教学科研</a>
+                    <ul class="sub">
+
+                        <li><a href="/jxgl.html">教学管理</a></li>
+                        <li><a href="/jxgl.html">教师发展</a></li>
+                        <li><a href="/xkjs.html">学科竞赛</a></li>
+                        <li><a href="/sgll.html">硕果累累</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <span class="menu_open"><img
+                            src="http://www.cfls.net.cn/site/219/news/572ff4fbeb9f4bc1bab29bc6500d99f7.png"
+                            alt=""></span>
+                    <span class="menu_close"><img
+                            src="http://www.cfls.net.cn/site/219/news/1702987d4d624ceb832dfa7326097dad.png"
+                            alt=""></span>
+
+                    <a href="/dqgz.html">党群工作</a>
+                    <ul class="sub">
+
+                        <li><a href="/yxdy.html">优秀党员</a></li>
+                        <li><a href="/hdjb.html">活动简报</a></li>
+                        <li><a href="/xxwx.html">学习文献</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <span class="menu_open"><img
+                            src="http://www.cfls.net.cn/site/219/news/572ff4fbeb9f4bc1bab29bc6500d99f7.png"
+                            alt=""></span>
+                    <span class="menu_close"><img
+                            src="http://www.cfls.net.cn/site/219/news/1702987d4d624ceb832dfa7326097dad.png"
+                            alt=""></span>
+
+                    <a href="/dyjl.html">对外交流</a>
+                    <ul class="sub">
+
+                        <li><a href="/level.html">AP/A-Level中心</a></li>
+                        <li><a href="/zjgz.html">中加高中</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <span class="menu_open"><img
+                            src="http://www.cfls.net.cn/site/219/news/572ff4fbeb9f4bc1bab29bc6500d99f7.png"
+                            alt=""></span>
+                    <span class="menu_close"><img
+                            src="http://www.cfls.net.cn/site/219/news/1702987d4d624ceb832dfa7326097dad.png"
+                            alt=""></span>
+
+                    <a href="/xypd.html">校友频道</a>
+                    <ul class="sub">
+
+                        <li><a href="/xyml.html">校友名录</a></li>
+                        <li><a href="/xygs.html">校友故事</a></li>
+                        <li><a href="/xyh.html">校友会</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <span class="menu_open"><img
+                            src="http://www.cfls.net.cn/site/219/news/572ff4fbeb9f4bc1bab29bc6500d99f7.png"
+                            alt=""></span>
+                    <span class="menu_close"><img
+                            src="http://www.cfls.net.cn/site/219/news/1702987d4d624ceb832dfa7326097dad.png"
+                            alt=""></span>
+
+                    <a href="/zszp.html">招生招聘</a>
+                    <ul class="sub">
+
+                        <li><a href="/zs.html">招生</a></li>
+                        <li><a href="/zszn.html">招生指南</a></li>
+                        <li><a href="/zsxx.html">招生信息</a></li>
+                        <li><a href="/zp.html">招聘</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- bannner图片 -->
+    <div class="bannerimg">
+        <img src="{{ url_for("static",filename="image/school/主页大照.jpg") }}" alt="">
+    </div>
+    <!-- 导航栏底部 -->
+    <div class="herderFooter">
+        <div class="herderFc" style="position: absolute;  width: 80%;left: 50%;transform: translateX(-50%);">
+            <ul class="layui-nav" style="display:none">
+                <li class="layui-nav-item layui-this"><a href="">学校热讯</a></li>
+                <li class="layui-nav-item"><a href="">图片新闻</a></li>
+                <li class="layui-nav-item"><a href="">媒体报道</a></li>
+                <span class="layui-nav-bar"></span></ul>
+            <div class="navbread">
+                <img src="http://www.cfls.net.cn/site/219/news/38f9fb0a659840148753df3780fdfc5f.png" alt="">
+                所在位置：
+
+                <!--codeName={SiteColumn.codeName}-->
+                <!--SubColumnList_Start-->
+                <span class="layui-breadcrumb" lay-separator=">" style="visibility: visible;">
+                        <a href="xyrx.html">{{ content["location"] }}</a>
+                    </span>
+                <!--SubColumnList_End-->
+
+            </div>
+        </div>
+    </div>
+</header><!--templateVarEnd-->
+<!-- 导航栏头部结束 -->
+
+<!-- 内容页 -->
+<div style="width: 100%;">
+    <div id="main">
+        <!-- 内容页左部分 -->
+        <div id="mainleft" class="mainl">
+            <div class="mainll">
+                <div class="mainlt">
+                    <h1>{{ content["title"] }} </h1>
+                    <p>{{ content["summary"] }} </p>
+                    <h3>日期：{{ content["date"] }}
+                    </h3>
+                </div>
+
+                <div class="mainlll">
+                    {{ content["html"] }}
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 内容页右半部分分 -->
+        <!--SiteColumn_Start-->
+        <!--codeName=details-->
+        <div id="mainright" class="mainr">
+            <div class="mainrt">
+                推荐阅读
+            </div>
+            <div id="photoshow">
+                <ul>
+
+                    <!--number=3-->
+                    <!--List_Start-->
+                    <a href="2535.html">
+                        <li><img src="http://www.cfls.net.cn/site/219/news/c8005993d29349e78b0a4a0035301755.png" alt="">
+                            <div class="phototxt">
+                                <p>以教育之强 夯实国家富强之基——学习贯彻习近平新时代中国</p>
+                                <span>2023-07-05</span>
+                            </div>
+                        </li>
+                        <!--List_End-->
+                    </a>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="pageBtn">
+        <div id="pageTurn">
+            <p><a href="xyrx.html" id="upPage">上一条：</a><a href="xyrx.html" target="_black">返回列表</a></p>
+            <p><a href="2525.html" id="nextPage">下一条：</a><a href="2525.html"
+                                                               target="_black">6人进省队！成外信竞问鼎四川！</a></p>
+        </div>
+    </div>
+
+    <!--templateVarStart--><!--templateVarName=footers-->
+    <div id="foot" class="wow slideInUp" data-wow-delay="0.3s">
+        <div class="footh" style="z-index:999;">
+            <img src="http://www.cfls.net.cn/site/219/news/065794e03ad848d5b8441b38524f0e9f.png" alt="">
+            <p>友情链接</p>
+            <span style="z-index:999;position: absolute;">
+                 <a href="http://www.cwfx.com/">成外附小</a>
+                                     <a href="http://www.cefls.cn/">实验外国语</a>
+                                    <a href="http://www.cdswxq.com/">实外西区</a>
+                                    <a href="https://www.cisisu.edu.cn/">四川外国语</a>
+                                    <a href="https://xt01.cdjyrc.com/web/index.html">成都教育在线服务中心</a>
+                                    <a href="https://chengdu.xueanquan.com/cdlogin.html">成都市校园安全教育平台</a>
+            </span>
+        </div>
+        <div class="footu">
+            <ul>
+                <li>
+                    <img src="http://www.cfls.net.cn/site/219/news/34303a29108e4cc4bcf199c3bd856e0c.png" alt="">
+                    <p>官方抖音</p>
+                </li>
+                <li>
+                    <img src="http://www.cfls.net.cn/site/219/news/568b70b49fe4474da544640354e0f965.png" alt="">
+                    <p>官方微博</p>
+                </li>
+                <li>
+                    <img src="http://www.cfls.net.cn/site/219/news/48578a4da7984f53bad6bd1ccbdaea7e.png" alt="">
+                    <p>官方微信</p>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>
+                地址：四川省成都市高新区合作街道百草路35号 邮编：611731 <a href="https://beian.miit.gov.cn"
+                                                                         style="color:#FFF">蜀ICP备13002418号-1</a>
+            </p>
+
+        </div>
+    </div><!--templateVarEnd-->
+</div>
+
+
+<div id="fatkun-drop-panel">
+    <a id="fatkun-drop-panel-close-btn">×</a>
+    <div id="fatkun-drop-panel-inner">
+        <div class="fatkun-content">
+            <svg class="fatkun-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 p-id="5892">
+                <path d="M494.933333 782.933333c2.133333 2.133333 4.266667 4.266667 8.533334 6.4h8.533333c6.4 0 10.666667-2.133333 14.933333-6.4l2.133334-2.133333 275.2-275.2c8.533333-8.533333 8.533333-21.333333 0-29.866667-8.533333-8.533333-21.333333-8.533333-29.866667 0L533.333333 716.8V128c0-12.8-8.533333-21.333333-21.333333-21.333333s-21.333333 8.533333-21.333333 21.333333v588.8L249.6 475.733333c-8.533333-8.533333-21.333333-8.533333-29.866667 0-8.533333 8.533333-8.533333 21.333333 0 29.866667l275.2 277.333333zM853.333333 874.666667H172.8c-12.8 0-21.333333 8.533333-21.333333 21.333333s8.533333 21.333333 21.333333 21.333333H853.333333c12.8 0 21.333333-8.533333 21.333334-21.333333s-10.666667-21.333333-21.333334-21.333333z"
+                      p-id="5893"></path>
+            </svg>
+            <div class="fatkun-title">拖拽到此处</div>
+            <div class="fatkun-desc">图片将完成下载</div>
+        </div>
+        <div id="fatkun-supported-by">由AIX智能下载器(图片/视频/音乐/文档)提供</div>
+    </div>
+</div>
+<script src="chrome-extension://cdnlggbebabeoneeglhadpagegmflmbc/aiscripts/scriptBus.js"></script>
+<script></script>
+</body>
+</html>

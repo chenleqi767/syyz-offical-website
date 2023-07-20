@@ -1,0 +1,1098 @@
+/* body {
+    min-width: 1500px;
+} */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-button:vertical {
+    display: none
+}
+
+::-webkit-scrollbar-track:vertical {
+    background-color: #c9c9c9;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: #c9c9c9;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    background-color: #c9c9c9;
+    border-radius: 30px
+}
+
+::-webkit-scrollbar-thumb:vertical:hover {
+    background-color: #FF6E00
+}
+
+::-webkit-scrollbar-corner:vertical {
+    background-color: #535353
+}
+
+::-webkit-scrollbar-resizer:vertical {
+    background-color: #FF6E00
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li {
+    list-style: none;
+    box-sizing: border-box
+}
+
+
+.logo img {
+    position: relative;
+    top: 17px;
+}
+
+.ss img {
+    position: absolute;
+    right: 0;
+    top: 35px;
+}
+
+.layui-nav .layui-nav-item {
+    vertical-align: -webkit-baseline-middle;
+
+}
+
+.layui-nav .layui-nav-item > a {
+    display: initial;
+    padding: 0px;
+    color: #FFF;
+
+
+}
+
+.layui-nav-child {
+    border-radius: 4px;
+
+    max-height: 200px;
+    overflow-y: overlay;
+    background-color: rgba(255, 255, 255, 1);
+    top: 55px;
+    left: -20px;
+    border: none;
+    padding: 0;
+}
+
+.layui-nav-child dd {
+    text-align: initial;
+    margin: 20px 0;
+    position: relative;
+    line-height: 15px;
+}
+
+.layui-nav-child dd a {
+
+    font-size: 15px;
+    text-shadow: none;
+    background: #FFF !important;
+}
+
+.layui-nav-child dd:hover {
+    background: red !important;
+}
+
+.layui-nav-child dd a:hover {
+    color: red !important;
+}
+
+.layui-nav-child a {
+    display: block;
+    font-size: 15px;
+    text-shadow: none;
+
+    padding: 0 20px !important;
+    color: #000 !important
+}
+
+.layui-nav_ul {
+    background: none !important;
+    height: 300px;
+}
+
+.layui-nav_ul a {
+
+}
+
+.layui-nav_ul::-webkit-scrollbar {
+    display: none;
+
+}
+
+.layui-nav .layui-nav-item > a {
+
+    display: initial;
+    color: #FFF;
+}
+
+header {
+    width: 100%;
+
+
+}
+
+.headerMenu {
+    background-color: rgba(156, 30, 33, 1);
+    z-index: 999;
+    position: fixed;
+    height: 100px;
+    top: 0;
+    left: 0;
+    width: inherit;
+}
+
+.headerMenu .layui-nav .layui-this:after,
+.layui-nav-bar {
+    background-color: #FFFFFF;
+    height: 0px;
+}
+
+/* .layui-row{
+    min-width: 1250px;
+} */
+
+.menulist {
+
+
+    width: 100px;
+
+}
+
+.menutitle {
+    padding-bottom: 15px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+
+.mnavh {
+    overflow: hidden;
+    float: right;
+    margin: 35px 0;
+    display: none;
+}
+
+.mnavh_close {
+    overflow: hidden;
+    float: right;
+    margin: 35px 0px;
+    display: none;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 18px;
+    position: fixed;
+    z-index: 999;
+    top: 92px;
+    display: none;
+}
+
+.bannerimg img {
+    width: 100%;
+    height: 650px;
+    margin-top: 100px;
+    object-fit: cover;
+}
+
+
+.herderFooter {
+    position: relative;
+
+    height: 64px;
+    background-color: #F8F8F8;
+    border-bottom: 1px solid #E6E6E6;
+
+}
+
+.herderFooter .layui-nav {
+    background-color: rgba(0, 0, 0, 0) !important;
+
+
+    padding: 0;
+    float: left;
+    line-height: 70px;
+
+
+}
+
+.herderFooter .layui-nav .layui-nav-item {
+
+    text-align: center;
+    margin-right: 20px;
+
+}
+
+.herderFooter .layui-nav .layui-nav-item a {
+    color: #333333;
+    font-size: 18px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+}
+
+.herderFooter .layui-nav .layui-this:after,
+.herderFooter .layui-nav .layui-nav-bar {
+    background-color: #D50C12;
+    height: 4px;
+
+
+}
+
+.herderFooter .navbread,
+.herderFooter .navbread .layui-breadcrumb a {
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #333333 !important;
+}
+
+.herderFooter .navbread {
+
+    float: left;
+    line-height: 60px;
+
+}
+
+
+#main {
+    margin: 0px auto;
+
+    width: 80%;
+    border: 1px solid #E6E6E6;
+    border-bottom: none;
+    border-top: none;
+    top: 0 auto;
+    position: relative;
+
+
+}
+
+#main .mainl {
+    width: 73%;
+    height: 100%;
+
+    border-right: 1px solid #E6E6E6;
+
+
+    overflow-y: scroll;
+    min-height: 1760px;
+}
+
+
+.mainll {
+    width: 100%;
+    height: 100%;
+}
+
+#main .mainl .mainlt {
+    width: 100%;
+    font-size: 20px;
+    border-bottom: 1px solid #E6E6E6;
+    float: left;
+    margin: 10px 80px;
+    height: 100%;
+    padding: 20px 0;
+    margin: 0;
+}
+
+#main .mainl .mainlll {
+    height: 100%;
+    float: left;
+    margin: 10px 80px;
+}
+
+.mainlll span,
+.mainlll p,
+.mainlll img {
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+
+}
+
+
+.mainlll img {
+
+
+}
+
+.mainlt h1,
+.mainlt p,
+.mainlt span {
+    font-size: 16px;
+    color: #000;
+    margin: 10px auto;
+    text-align: left;
+    line-height: 30px;
+}
+
+.mainlt h1 {
+    font-size: 30px;
+    color: #333333;
+    text-align: center;
+}
+
+.mainlt p {
+
+    font-size: 16px;
+    color: #000;
+    margin: 10px auto;
+    text-align: left;
+    line-height: 30px;
+    padding: 9px 80px;
+}
+
+.mainlt h3 {
+    font-size: 16px;
+
+    color: #999999;
+    text-align: center;
+}
+
+
+.mainr {
+    width: 27%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.mainrt {
+    height: 30px;
+    width: 350px;
+    margin-left: 30px;
+    margin-top: 50px;
+    text-indent: 10px;
+    border-left: 4px solid #D50C12;
+    line-height: 30px;
+    font-size: 18px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #333333;
+}
+
+
+#photoshow {
+    overflow: hidden;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #E6E6E6;
+
+    width: 100%;
+}
+
+
+#photoshow ul li {
+
+    margin: auto;
+    white-space: nowrap;
+    width: 90%;
+
+    height: 350px;
+    margin-left: 20px;
+    float: left;
+    margin-top: 40px;
+    text-align: center;
+
+
+}
+
+.phototxt {
+    text-align: center;
+    position: relative;
+    background-color: #F8F8F8;
+    height: 90px;
+    width: 100%;
+    bottom: 90px;
+
+
+}
+
+#photoshow ul li:hover {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 2px solid #9C1E21;
+    position: relative;
+
+
+}
+
+
+#photoshow ul li:hover .phototxt {
+    background: rgba(156, 30, 33, 0.767);
+
+
+}
+
+#photoshow ul li:hover p {
+    color: #FFF;
+
+}
+
+#photoshow ul li:hover span {
+    color: #E5C3C4;
+
+}
+
+
+#photoshow img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    flex: 1;
+
+
+}
+
+#photoshow ul li p {
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    font-weight: 600;
+    padding: 20px 30px 10px 30px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#photoshow ul li span {
+    font-size: 16px;
+    font-family: ArialMT;
+    color: #999999;
+}
+
+
+#pageBtn {
+    border-top: 1px solid #E6E6E6;
+    height: 150px;
+    position: relative;
+
+    background-color: #F8F8F8;
+}
+
+#pageTurn {
+
+    width: 80%;
+    top: 30px;
+    margin: 20px auto;
+
+
+}
+
+#pageTurn p {
+    padding: 10px;
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #333333;
+}
+
+.layui-laypage .layui-laypage-curr .layui-laypage-em {
+    background-color: #9C1E21;
+}
+
+#foot {
+    position: relative;
+    height: 270px;
+    background: url(http://www.cfls.net.cn/site/219/news/a480887f6f7f46b1bfe4e995b69aeb23.png);
+
+    background-color: #9C1E21;
+}
+
+#foot span a {
+    font-size: 14px;
+    color: #FFF;
+}
+
+.footh {
+    position: absolute;
+
+
+    width: 80%;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.footh p {
+    padding: 20px 0px 20px 0px;
+    font-family: MicrosoftYaHei;
+    font-size: 16px;
+    color: #FFF;
+}
+
+.footh span a {
+    padding: 0px 10px 0px 0px;
+    font-family: MicrosoftYaHei;
+    font-size: 16px;
+    color: #FFF;
+}
+
+.footu {
+    position: absolute;
+    width: 80%;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+
+}
+
+
+.footu ul li {
+    padding: 0px 0px 0px 40px;
+    float: right;
+}
+
+.footu ul li p {
+    color: #FFF;
+    padding: 20px 0px 0px 0px;
+
+}
+
+.copyright {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background: #231E1D;
+    height: 50px;
+
+}
+
+.copyright p {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #FFFFFF;
+    left: 50%;
+    top: 18px;
+    transform: translateX(-50%);
+}
+
+div::-webkit-scrollbar {
+    width: 5px;
+
+    height: 10px;
+
+}
+
+div::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    border-radius: 3px;
+}
+
+div::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #E8E8E8;
+}
+
+
+div::-webkit-scrollbar-button {
+    display: none;
+}
+
+
+div::-webkit-scrollbar-corner {
+    display: none;
+}
+
+
+/* @media  (max-width: 991px) {
+.headerMenu {
+background-color: rgba(146, 134, 134, 0.767) ;
+}
+
+} */
+@media screen and (min-width: 1300px) {
+
+    nav,
+    .mnavh,
+    .mnavh_close {
+        display: none !important;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .headerMenu {
+        height: 110px;
+    }
+
+    .headerMenu .layui-row {
+
+        width: 90% !important;
+        min-width: none !important;
+    }
+
+    .bannerimg img {
+        content: url(http://www.cfls.net.cn/site/219/news/9b108f4bb592463b8d1d2db0c2577517.png);
+        height: 370px !important;
+
+        margin-top: 110px;
+    }
+
+    .headerMenu .layui-col-md8 {
+        display: none;
+    }
+
+    .layui-col-md4 img {
+        height: 80px !important;
+        margin: 15px 0 !important;
+
+    }
+
+    nav {
+        float: left;
+        height: 100%;
+        line-height: 100px;
+        display: none;
+        overflow-y: scroll;
+    }
+
+    #starlist {
+        display: block;
+        width: 100%;
+
+        overflow-y: scroll;
+    }
+
+    #starlist li {
+        width: 100%;
+        padding: 0 30px;
+        background: #fff;
+        float: none;
+        display: block;
+        font-weight: 400;
+    }
+
+    #starlist li a::before {
+        padding-right: 20px;
+    }
+
+
+    #starlist li:last-child {
+        padding-bottom: 100%
+    }
+
+    #starlist li a {
+        font-size: 32px;
+        padding-left: 60px;
+        color: rgb(0, 0, 0);
+        display: block;
+        width: 100%;
+        float: none;
+        padding: 0;
+        background: #fff;
+        border-bottom: #D7D7D7 1px solid;
+        text-indent: 1em;
+    }
+
+    #starlist ul.sub {
+        display: none;
+        position: inherit;
+        left: inherit;
+        top: inherit;
+    }
+
+    #starlist ul.sub li {
+        width: 100%
+    }
+
+    #starlist ul.sub li a::before {
+        content: url(http://www.cfls.net.cn/site/219/news/132012a21d1f41d482c9c4915dbb45c5.png);
+        padding-right: 10px;
+        height: 2px;
+    }
+
+    #starlist ul.sub li a::after {
+        content: url();
+    }
+
+    #starlist ul.sub li:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    #starlist ul.sub li a {
+        color: rgb(0, 0, 0);
+        font-weight: 400;
+        border-bottom: #D7D7D7 1px solid;
+    }
+
+    #starlist ul.sub li a:hover,
+    #starlist li:hover a,
+    #starlist #selected {
+        color: rgb(0, 0, 0);
+    }
+
+
+    .menu .menu_open {
+        display: block;
+    }
+
+    .menu span {
+        display: none;
+        float: right;
+    }
+
+
+    .mnavh {
+        display: block;
+    }
+
+    .herderFc {
+        width: 90% !important;
+    }
+
+    .herderFooter .layui-nav .layui-nav-item a {
+
+        font-size: 24px;
+
+    }
+
+    .herderFooter .navbread {
+        position: absolute;
+
+    }
+
+    .herderFooter .navbread img {
+        content: url(http://www.cfls.net.cn/site/219/news/5cd0799ea7dd4bc68e4b21ff234fc59d.png);
+        height: 28px;
+    }
+
+    .herderFooter .navbread,
+    .herderFooter .navbread a {
+        font-size: 22px !important;
+    }
+
+
+    #mainright {
+        display: none;
+    }
+
+    #main {
+        width: 100%;
+        margin: 60px auto;
+
+    }
+
+    #main .mainl {
+        width: 100%;
+        overflow: auto;
+        overflow: initial;
+    }
+
+    .mainlt h1 {
+        font-size: 30px;
+    }
+
+    .mainlt p,
+    .mainlt h3,
+    .mainlll {
+        font-size: 20px;
+    }
+
+    #pageTurn p {
+        font-size: 20px;
+    }
+
+
+    #foot {
+        height: 470px;
+        background: none;
+        background-color: #9C1E21 !important;
+
+    }
+
+    .footh {
+        width: 90%;
+        top: 70px;
+    }
+
+    .footh p {
+        font-size: 24px;
+    }
+
+    #foot span a {
+        width: 532px;
+        height: 64px;
+        font-size: 24px;
+        font-family: Microsoft YaHei;
+        font-weight: 400;
+        color: #FFFFFF;
+        line-height: 40px;
+
+    }
+
+    .footu {
+        top: 35px;
+        width: 90%;
+    }
+
+    .footu img {
+        width: 90px;
+    }
+
+    .footu ul li p {
+        font-size: 24px;
+
+    }
+
+    .copyright {
+        height: 120px;
+
+    }
+
+    .copyright p {
+        width: 90%;
+        top: 26px;
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        -webkit-text-size-adjust: none;
+
+
+    }
+
+    .headerMenu {
+        height: 66px;
+
+
+    }
+
+    .layui-col-md4 img {
+        height: 48px !important;
+        margin: 10px 0 !important;
+    }
+
+    .mnavh,
+    .mnavh_close {
+        margin: 19px 0;
+
+    }
+
+    .mnavh img,
+    .mnavh_close img {
+        height: 25px;
+    }
+
+    .bannerimg img {
+
+        height: 222px !important;
+
+        margin-top: 66px;
+    }
+
+    .herderFooter {
+        height: 38px;
+    }
+
+    .herderFooter .layui-nav .layui-nav-item a {
+        font-size: 16px;
+    }
+
+    .herderFooter .layui-nav {
+        line-height: 0;
+    }
+
+    .layui-nav .layui-nav-item {
+        line-height: 38px;
+    }
+
+    .herderFooter .layui-nav .layui-this:after,
+    .herderFooter .layui-nav .layui-nav-bar {
+        height: 2px;
+    }
+
+    .herderFooter .navbread,
+    .herderFooter .navbread a {
+        font-size: 16px !important;
+    }
+
+    .herderFooter .navbread {
+        margin: -10px 0;
+    }
+
+    .herderFooter .navbread img {
+        height: 18px;
+    }
+
+    .mainlt h1 {
+        font-size: 18px;
+        margin: 18px auto 6px auto;
+    }
+
+    #main {
+        margin: 40px auto;
+    }
+
+    #main .mainl {
+        min-height: 600px;
+    }
+
+    #main .mainl .mainlt {
+        height: 140px;
+        top: 70px;
+    }
+
+    .mainlt p,
+    .mainlt h3,
+    .mainlll {
+        font-size: 12px;
+    }
+
+    .mainlt p {
+        margin: 16px auto 18px auto;
+    }
+
+    #main .mainl .mainlll {
+        top: 170px;
+    }
+
+    .mainlll img {
+        width: 100%;
+        height: 100%
+    }
+
+    #pageBtn {
+        height: 120px;
+    }
+
+    #pageTurn p {
+        font-size: 12px;
+    }
+
+    #foot {
+        height: 262px;
+
+    }
+
+    .footh {
+        top: 38px;
+    }
+
+    .footh img {
+        height: 40px;
+    }
+
+    .footh p,
+    #foot span a {
+        font-size: 12px;
+    }
+
+    .footh p {
+        padding: 16px 0px 16px 0px;
+    }
+
+    #foot span a {
+        line-height: 0;
+    }
+
+    .footu {
+        top: 18px;
+    }
+
+    .footu img {
+        width: 100%;
+    }
+
+    .footu ul li {
+        width: 16%;
+        padding: 0px 0px 0px 6px;
+    }
+
+    .footu ul li p {
+        font-size: 12px;
+    }
+
+    .copyright {
+        height: 72px;
+    }
+
+    .copyright p {
+        top: 16px;
+        font-size: 14px;
+    }
+
+    nav {
+        line-height: 48px;
+        top: 48px;
+        width: 60%;
+        overflow: scroll;
+        height: 100%;
+    }
+
+    .menu .menu_open img {
+
+        height: 14px;
+    }
+
+    .menu .menu_close img {
+
+        height: 4px;
+    }
+
+    #starlist li a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    body {
+        -webkit-text-size-adjust: none;
+
+
+    }
+
+    /*.footu ul li:first-child {
+       display: block;
+   }*/
+}
+
+@media screen and (min-width: 480px)and (max-width: 750px) {
+    body {
+        -webkit-text-size-adjust: none;
+
+
+    }
+
+    .footu ul li:first-child {
+        display: none;
+    }
+}
+
+.layui-nav .layui-nav-more {
+    display: none;
+}
+
+@media screen and  (max-width: 375px) {
+    #starlist ul.sub li a {
+        font-size: 12px !important
+    }
+
+    #starlist li a {
+        text-indent: 0em;
+    }
+}
