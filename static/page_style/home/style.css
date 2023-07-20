@@ -282,12 +282,12 @@ textarea {
 .bodyBox .scientificBox:nth-child(n):hover .hoverbox {
 
     transform: translateY(-5%);
-    border: 1px solid rgba(156, 30, 33, 1);
+    border: 1px solid #0880bd;
 }
 
 .bodyBox .newbox:nth-child(n):hover .newtext,
 .bodyBox .scientificBox:nth-child(n):hover .scientificText {
-    background: rgba(156, 30, 33, 1);
+    background: #0880bd;
 }
 
 .bodyBox .newbox:nth-child(n):hover .newtitle,
@@ -374,7 +374,7 @@ textarea {
 
 .bodyBox .teacherBox:nth-child(n):hover .teacherlist {
 
-    background-color: #9C1E21;
+    background-color: #0880bd;
     transform: translateY(-5%);
 }
 
