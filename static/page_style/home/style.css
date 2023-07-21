@@ -57,7 +57,7 @@ textarea {
 
 
     height: 980px;
-    background: url('static/image/42c7703f146545618f68ec1c300c5942.png') no-repeat center;
+    background: url('static/image/school/ywsyyz.jpg') no-repeat center;
     background-size: cover;
     background-position: center center;
     -webkit-animation-name: fadeIn;
@@ -72,7 +72,7 @@ textarea {
 
 
 .headerMenu {
-    background-color: rgba(156, 30, 33, 0.8);
+    background-color: #0880bd;
 }
 
 .layui-nav {
@@ -161,7 +161,7 @@ textarea {
     background-color: #0880bd;
 
     border-color: transparent;
-    box-shadow: 8px 8px 3px rgba(151, 151, 151, 0.1);
+    box-shadow: 8px 8px 3px #5dbaf1;
     transform: translateY(-10%);
 }
 
@@ -917,7 +917,7 @@ nav {
     align-items: center;
     justify-content: center;
     height: 60px;
-    background: rgba(236, 34, 46, 1);
+    background: #0880bd;
     float: left;
 }
 
@@ -1321,7 +1321,7 @@ nav {
     display: block;
     width: 0;
     height: 3px;
-    background: #EC222E;
+    background: #0880bd;
     position: absolute;
     left: 1px;
     bottom: 0;
@@ -1334,7 +1334,7 @@ nav {
 }
 
 .newsBanner li:hover h3 {
-    color: #EC222E;
+    color: #0880bd;
 }
 
 .newsBanner .z_tit {
@@ -1446,7 +1446,7 @@ nav {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: #EC222E;
+    background: #0880bd;
     color: #fff;
     border-radius: 40px;
     position: absolute;
